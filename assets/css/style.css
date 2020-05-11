@@ -93,3 +93,46 @@ body{
     color: rgb(236, 18, 18);
     line-height: 80px;
 }
+.menu{
+    height: 40px;
+    background-color: rgb(236, 18, 18);
+}
+.menuint{
+    width: 100%;
+    max-width: 1040px;
+    height: 40px;
+    margin: auto;
+}
+.menu .menuint ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu .menuint ul li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 8px;
+}
+.menu .menuint ul li:hover .submenu{
+    display: block;
+}
+.menu .menuint a{
+    color: #fff;
+    text-decoration: none;
+}
+.submenu{
+    width: 150px;
+    background-color: rgba(155, 15, 15, 0.938);
+    position: absolute;
+    display: none;
+}
+.submenuitem{
+    height: 30px;
+    width: 140px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.submenuitem:hover{
+    background-color: rgb(90, 4, 4);
+}
