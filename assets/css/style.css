@@ -96,6 +96,7 @@ body{
 .menu{
     height: 40px;
     background-color: rgb(236, 18, 18);
+    box-shadow: 0px 4px 4px rgba(214, 7, 7, 0.473);
 }
 .menuint{
     width: 100%;
@@ -113,6 +114,9 @@ body{
     height: 40px;
     line-height: 40px;
     padding: 0 8px;
+}
+.menu .menuint ul li:hover{
+    background-color:rgb(90, 4, 4);
 }
 .menu .menuint ul li:hover .submenu{
     display: block;
@@ -135,4 +139,77 @@ body{
 }
 .submenuitem:hover{
     background-color: rgb(90, 4, 4);
+}
+.ultimasnoticias{
+    height: 40px;
+}
+.ultimasnoticiasint{
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+    height: 40px;
+}
+.ultinoticiasarea{
+    height: 28px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+.ultinoticiastitulo{
+    background-color: rgb(235, 15, 15);
+    color: #fff;
+    height: 28px;
+    display: inline-block;
+    line-height: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+.ultinoticiasnoticia{
+    color: #000;
+    height: 28px;
+    display: inline-block;
+    padding-left: 5px;
+}
+.containerint{
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+}
+.rightside{
+    width: 275px;
+    min-height: 200px;
+    float: right;
+    margin-left: 12px;
+}
+.leftside{
+    width: 753px;
+    float: left;
+}
+.widget{
+    background-color: #fff;
+    border: solid 1px #ccc;
+    margin-bottom: 10px;
+}
+.widgettitulo{
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ddd;
+    line-height: 30px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+.widgetconteudo{
+    text-align: center;
+    padding: 5px;
+}
+.noticiaitem{
+    font-size: 12px;
+    text-align: justify;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.noticiaitem a{
+    text-decoration: none;
+    color: #000;
 }
