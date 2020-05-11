@@ -20,8 +20,10 @@ body{
 }
 .toprigth{
     width: 50%;
-    height: 30px;
+    height: 28px;
     float: right;
+    text-align: right;
+    margin-top: 2px;
 }
 .topoleft ul{
     margin: 0;
@@ -41,4 +43,53 @@ body{
 }
 .topoleft li .ativo{
     color: rgb(91, 113, 236)
+}
+.topobusca{
+    width: 110px;
+    height: 20px;
+    outline: 0;
+}
+.toprigth a {
+    float: right;
+}
+.toprigth input {
+    float: right;
+    margin-left: 2px;
+}
+.toprigth img {
+    margin-right: 2px;
+}
+.topo2{
+    height: 95px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.topo2int{
+    width: 100%;
+    max-width: 1040px;
+    height: 95px;
+    margin: auto;
+}
+.logo{
+    width: 230px;
+    height: 95px;
+    float: left;
+}
+.banner{
+    width: 650px ;
+    height: 80px;
+    float: right;
+    margin-top: 7px;
+    background-color: rgba(235, 16, 16, 0.952);
+}
+.banner h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    color: #fff;
+}
+.logo h1{
+    font-size: 30px;
+    color: rgb(236, 18, 18);
+    line-height: 80px;
 }
