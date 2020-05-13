@@ -19,8 +19,8 @@
                 </ul>
             </div>
             <div class="toprigth">
-                <a href=""><input type="image" src="assets/images/search.png" border="0" width="26"height="26" /></a>
-                <input type="text" name="busca" placeholder="Busca..." class="topobusca">
+                <a href=""><input type="image" class="lupa" src="assets/images/search.png" border="0" width="23"height="23" /></a>
+                <input type="text" id="busca" name="busca" placeholder="Busca..." class="topobusca">
                 <a href="">
                     <img src="assets/images/rss.png" border="0" width="26" height="26" >
                 </a>
@@ -53,81 +53,89 @@
 
     <div class="menu">
         <div class="menuint">
-            <ul>
-                <li><a href="./" class="ativo">Home</a></li>
-                <li><a href="./">Economia</a></li>
-                <li>
-                    <a href="./">Entretenimento</a>
-                    <img src="assets/images/white-down-arrow-png-2.png" border="0" width="10">
-                    <div class="submenu">
-                        <a href="./">
-                            <div class="submenuitem">
-                                Submenu 1
-                            </div>
-                        </a>
-                        <a href="./">
-                            <div class="submenuitem">
-                                Submenu 2
-                            </div>
-                        </a>
-                        <a href="./">
-                            <div class="submenuitem">
-                                Submenu 3
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <a href="./">Esporte</a>
-                    <img src="assets/images/white-down-arrow-png-2.png" border="0" width="10">
-                    <div class="submenu">
-                        <a href="./">
-                            <div class="submenuitem">
-                                Submenu 1
-                            </div>
-                        </a>
-                        <a href="./">
-                            <div class="submenuitem">
-                                Submenu 2
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li><a href="./">Geral</a></li>
-                <li>
-                    <a href="./">Notícias</a>
-                    <img src="assets/images/white-down-arrow-png-2.png" border="0" width="10">
-                    <div class="submenu">
-                        <a href="./">
-                            <div class="submenuitem">
-                                Submenu 1
-                            </div>
-                        </a>
-                        <a href="./">
-                            <div class="submenuitem">
-                                Submenu 2
-                            </div>
-                        </a>
-                        <a href="./">
-                            <div class="submenuitem">
-                                Submenu 3
-                            </div>
-                        </a>
-                        <a href="./">
-                            <div class="submenuitem">
-                                Submenu 4
-                            </div>
-                        </a>
-                        <a href="./">
-                            <div class="submenuitem">
-                                Submenu 5
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li><a href="./">Polícia</a></li>
-                <li><a href="./">Vídeos</a></li>
-            </ul>
+            <img src="assets/images/menu.png" 
+                borde="0" width="30" height="30"
+                class="mobile" onclick="toggleMenu()"
+            >
+            <div class="menugambiarra" id="menu">
+                 <ul >
+                    <li><a href="./" class="ativo">Home</a></li>
+                    <li><a href="./">Economia</a></li>
+                    <li>
+                        <a href="./">Entretenimento</a>
+                        <img src="assets/images/white-down-arrow-png-2.png" border="0" width="10">
+                        <div class="submenu">
+                            <a href="./">
+                                <div class="submenuitem">
+                                    Submenu 1
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">
+                                    Submenu 2
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">
+                                    Submenu 3
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./">Esporte</a>
+                        <img src="assets/images/white-down-arrow-png-2.png" border="0" width="10">
+                        <div class="submenu">
+                            <a href="./">
+                                <div class="submenuitem">
+                                    Submenu 1
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">
+                                    Submenu 2
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="./">Geral</a></li>
+                    <li>
+                        <a href="./">Notícias</a>
+                        <img src="assets/images/white-down-arrow-png-2.png" border="0" width="10">
+                        <div class="submenu">
+                            <a href="./">
+                                <div class="submenuitem">
+                                    Submenu 1
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">
+                                    Submenu 2
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">
+                                    Submenu 3
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">
+                                    Submenu 4
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenuitem">
+                                    Submenu 5
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="./">Polícia</a></li>
+                    <li><a href="./">Vídeos</a></li>
+                </ul>
+            </div>
+               
+            </div>
         </div>
     </div>
 
@@ -215,7 +223,7 @@
                     </div>
                     <div class="widgetconteudo">
                         <div class="noticiaarea1">
-                            <div class="noticiaitem noticiabig">
+                            <div class="noticiaitem2 noticiabig">
                                 <div class="noticiaimg">
                                     <img src="https://www.wesleysafadao.com.br/ws/wp-content/uploads/2016/07/07-noticias.jpg" border="0" width="80" height="80">
                                 </div>
@@ -230,7 +238,7 @@
                             </div>
                         </div>
                         <div class="noticiaarea2">
-                            <div class="noticiaitem">
+                            <div class="noticiaitem2">
                                 <div class="noticiaimg">
                                     <img src="https://www.netflu.com.br/wp-content/uploads/2020/05/NF-NA-REDE-THUMB-534x462.jpg" border="0" width="80" height="80">
                                 </div>
@@ -243,7 +251,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="noticiaitem">
+                            <div class="noticiaitem2">
                                 <div class="noticiaimg">
                                     <img src="https://conteudo.imguol.com.br/c/noticias/01/2020/04/16/presidente-jair-bolsonaro-apresenta-nelson-teich-como-novo-ministro-da-saude-1587072311753_v2_300x225.jpg" border="0" width="80" height="80">
                                 </div>
@@ -256,7 +264,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="noticiaitem">
+                            <div class="noticiaitem2">
                                 <div class="noticiaimg">
                                     <img src="https://estado.rs.gov.br/upload/recortes/202005/08160611_1843987_TH.png" border="0" width="80" height="80">
                                 </div>
@@ -270,7 +278,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="noticiaitem">
+                            <div class="noticiaitem2">
                                 <div class="noticiaimg">
                                     <img src="https://s3.amazonaws.com/bucket-gw-cni-static-cms-si/portaldaindustria/noticias/media/imagem_plugin/fakenews.jpg" border="0" width="80" height="80">
                                 </div>
@@ -287,13 +295,14 @@
                         <div style="clear: both;"></div>
                     </div>
                 </div>
+
                 <div class="widget">
                     <div class="widgettitulo">
-                        Notícias
+                        Esporte
                     </div>
                     <div class="widgetconteudo">
                         <div class="noticiaarea1">
-                            <div class="noticiaitem noticiabig">
+                            <div class="noticiaitem2 noticiabig">
                                 <div class="noticiaimg">
                                     <img src="https://www.wesleysafadao.com.br/ws/wp-content/uploads/2016/07/07-noticias.jpg" border="0" width="80" height="80">
                                 </div>
@@ -308,7 +317,7 @@
                             </div>
                         </div>
                         <div class="noticiaarea2">
-                            <div class="noticiaitem">
+                            <div class="noticiaitem2">
                                 <div class="noticiaimg">
                                     <img src="https://www.netflu.com.br/wp-content/uploads/2020/05/NF-NA-REDE-THUMB-534x462.jpg" border="0" width="80" height="80">
                                 </div>
@@ -321,7 +330,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="noticiaitem">
+                            <div class="noticiaitem2">
                                 <div class="noticiaimg">
                                     <img src="https://conteudo.imguol.com.br/c/noticias/01/2020/04/16/presidente-jair-bolsonaro-apresenta-nelson-teich-como-novo-ministro-da-saude-1587072311753_v2_300x225.jpg" border="0" width="80" height="80">
                                 </div>
@@ -334,7 +343,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="noticiaitem">
+                            <div class="noticiaitem2">
                                 <div class="noticiaimg">
                                     <img src="https://estado.rs.gov.br/upload/recortes/202005/08160611_1843987_TH.png" border="0" width="80" height="80">
                                 </div>
@@ -348,7 +357,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="noticiaitem">
+                            <div class="noticiaitem2">
                                 <div class="noticiaimg">
                                     <img src="https://s3.amazonaws.com/bucket-gw-cni-static-cms-si/portaldaindustria/noticias/media/imagem_plugin/fakenews.jpg" border="0" width="80" height="80">
                                 </div>
